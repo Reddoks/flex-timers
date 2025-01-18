@@ -1,0 +1,28 @@
+{
+  "name": "flex-timers",
+  "version": "0.0.1",
+  "description": "Flexible timers for Node JS",
+  "main": "dist/commonjs",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "test": "node tests/tests.js",
+    "posttest": "standard",
+    "fix": "standard --fix",
+    "build:ts:module": "tsc --declaration",
+    "build:ts:commonjs": "tsc --outDir dist --module commonjs",
+    "build": "npm run build:ts:module && npm run build:ts:commonjs",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Reddoks/flex-timers.git"
+  },
+  "author": "Vladimir Vlasov",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "standard": "^17.1.2",
+    "tap": "^21.0.1",
+    "typescript": "^5.7.3"
+  }
+}
