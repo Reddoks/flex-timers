@@ -20,7 +20,7 @@ npm i flex-timers
 
 Run in 10 seconds:
 ```ts
-import { FlexTimerType, FlexTimer } from 'flex-timer';
+import { FlexTimerType, FlexTimer } from 'flex-timers';
 const timer = new FlexTimer(
   FlexTimerType.RUN_IN,
   10000,
@@ -30,7 +30,7 @@ timer.start();
 ```
 Run at defined time and also pass params in callback with timer definition:
 ```ts
-import { FlexTimerType, FlexTimer } from 'flex-timer';
+import { FlexTimerType, FlexTimer } from 'flex-timers';
 const timer = new FlexTimer(
   FlexTimerType.RUN_AT,
   Date.now() + 10000,
@@ -41,7 +41,7 @@ timer.start();
 ```
 Run every 10 seconds, and also you can override callback parameters for specific run:
 ```ts
-import { FlexTimerType, FlexTimer } from 'flex-timer';
+import { FlexTimerType, FlexTimer } from 'flex-timers';
 const timer = new FlexTimer(
   FlexTimerType.RUN_EVERY,
   10000,
