@@ -1,8 +1,8 @@
 {
   "name": "flex-timers",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Flexible timers for Node JS",
-  "main": "dist/commonjs",
+  "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "test": "node tests/tests.js",
